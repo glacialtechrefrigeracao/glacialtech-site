@@ -58,7 +58,7 @@ nav ul li a:hover {
 /* Banner principal */
 .whatsapp-container {
     position: relative;
-    background-image: linear-gradient(rgba(3, 3, 66, 0.55), rgba(3, 3, 66, 0.75)), url("../components/images/fundo-gt.png");
+    background-image: linear-gradient(rgba(3, 3, 66, 0.55), rgba(3, 3, 66, 0.75)), url("../components/images/fundo-polartech.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -162,10 +162,144 @@ p {
 
 .servico {
     background-color: #f9f9f9; /* Fundo claro */
-    padding: 20px;
+    padding: 24px 20px;
     border-radius: 8px; /* Bordas arredondadas */
     text-align: center; /* Centraliza o texto */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.servico:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.servico-icon {
+    font-size: 40px;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+/* Seção Diferenciais */
+.diferenciais {
+    background-color: #030342; /* Fundo azul escuro da marca */
+    color: #ffffff;
+}
+
+.diferenciais h2 {
+    color: #35bcff;
+}
+
+.diferenciais-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.diferencial {
+    background-color: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(53, 188, 255, 0.25);
+    padding: 24px 18px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.diferencial-num {
+    display: inline-block;
+    font-size: 34px;
+    margin-bottom: 6px;
+}
+
+.diferencial h3 {
+    color: #ffffff;
+}
+
+.diferencial p {
+    color: #d6ecff;
+}
+
+/* Depoimentos (quando ativado no HTML) */
+.depoimentos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.depoimento {
+    background-color: #f9f9f9;
+    padding: 24px;
+    border-radius: 10px;
+    border-left: 4px solid #35bcff;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+}
+
+.depoimento cite {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    font-style: normal;
+    color: #030342;
+}
+
+/* Contato */
+.contato-intro {
+    max-width: 620px;
+    margin: 0 auto 24px;
+}
+
+.contato-item h3 {
+    margin-top: 6px;
+}
+
+.contato-item a {
+    color: #030342;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contato-item a:hover {
+    text-decoration: underline;
+}
+
+.contato-icon-emoji {
+    font-size: 44px;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: black;
+    color: #f9f9f9;
+    text-align: center;
+    padding: 32px 20px;
+    border-top: 1px solid #ffffff30;
+}
+
+.rodape-logo {
+    width: 56px;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+.rodape-nome {
+    color: #35bcff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.rodape-area {
+    color: #cfd8e3;
+    font-size: 14px;
+}
+
+.rodape-copy {
+    color: #9aa7b4;
+    font-size: 13px;
+    margin-top: 10px;
 }
 
 /* Layout dos Contatos */
@@ -246,6 +380,16 @@ p {
     0%   { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
     70%  { box-shadow: 0 0 0 16px rgba(37, 211, 102, 0); }
     100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+/* Acessibilidade: desativa animações para quem prefere menos movimento */
+@media (prefers-reduced-motion: reduce) {
+    .whatsapp-float {
+        animation: none;
+    }
+    * {
+        transition: none !important;
+    }
 }
 
 /* Responsividade */
