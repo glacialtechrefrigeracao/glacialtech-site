@@ -17,14 +17,13 @@
     <meta name="description" content="Polartech: instalação, manutenção, limpeza e conserto de ar-condicionado em Salvador, Lauro de Freitas e região. Orçamento grátis e atendimento no mesmo dia pelo WhatsApp.">
     <meta name="keywords" content="ar-condicionado Salvador, instalação ar-condicionado, manutenção ar-condicionado, limpeza ar-condicionado, conserto ar-condicionado, Lauro de Freitas">
     <meta name="author" content="Polartech">
-    <meta name="theme-color" content="#030342">
-    <!-- Ao publicar em domínio próprio, troque a URL abaixo pelo domínio real -->
+    <meta name="theme-color" content="#05082e">
     <link rel="canonical" href="https://glacialtechrefrigeracao.github.io/glacialtech-site/">
 
-    <!-- Favicon (usa a própria logo) -->
-    <link rel="icon" type="image/svg+xml" href="components/images/logo-PT.svg">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="components/images/logo-mark.svg">
 
-    <!-- Open Graph (preview ao compartilhar no WhatsApp / redes) -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Polartech">
     <meta property="og:title" content="Polartech — Ar-condicionado em Salvador e região">
@@ -32,15 +31,14 @@
     <meta property="og:url" content="https://glacialtechrefrigeracao.github.io/glacialtech-site/">
     <meta property="og:image" content="https://glacialtechrefrigeracao.github.io/glacialtech-site/components/images/manutencao-de-ar-condicionado-2.png">
     <meta property="og:locale" content="pt_BR">
-    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Polartech — Ar-condicionado em Salvador e região">
     <meta name="twitter:description" content="Instalação, manutenção, limpeza e conserto de ar-condicionado. Orçamento grátis e atendimento no mesmo dia.">
     <meta name="twitter:image" content="https://glacialtechrefrigeracao.github.io/glacialtech-site/components/images/manutencao-de-ar-condicionado-2.png">
 
-    <link href="styles/style.css?v=3" rel="stylesheet">
+    <link href="styles/style.css?v=5" rel="stylesheet">
 
-    <!-- Dados estruturados: negócio local (ajuda o Google a te mostrar no mapa/buscas locais) -->
+    <!-- Dados estruturados: negócio local -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -50,12 +48,7 @@
       "url": "https://glacialtechrefrigeracao.github.io/glacialtech-site/",
       "telephone": "+55-71-98196-5938",
       "areaServed": ["Salvador", "Lauro de Freitas", "Região Metropolitana de Salvador"],
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Salvador",
-        "addressRegion": "BA",
-        "addressCountry": "BR"
-      },
+      "address": { "@type": "PostalAddress", "addressLocality": "Salvador", "addressRegion": "BA", "addressCountry": "BR" },
       "priceRange": "$$",
       "sameAs": []
     }
@@ -65,145 +58,203 @@
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MVWZPBQ5"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
 
-    <!-- Cabeçalho com Menu de Navegação -->
-    <header>
-        <div id="title">
-            <img src="components/images/logo-PT.svg" alt="Polartech Logo" class="logo">
-            <h1>Polartech</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#diferenciais">Diferenciais</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-            </ul>
+    <!-- Cabeçalho -->
+    <header class="site-header">
+        <a href="#inicio" class="brand" aria-label="Polartech - início">
+            <img src="components/images/logo-mark.svg" alt="" class="brand-mark">
+            <span class="brand-name">Polar<span>tech</span></span>
+        </a>
+        <nav class="site-nav">
+            <a href="#servicos">Serviços</a>
+            <a href="#como-funciona">Como funciona</a>
+            <a href="#duvidas">Dúvidas</a>
         </nav>
+        <a href="https://api.whatsapp.com/send?phone=5571981965938&text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento."
+           target="_blank" rel="noopener" class="btn btn-wa btn-header" data-cta="header">
+            <svg class="wa-svg" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.1 1.6 5.9L4 29l8.3-1.6C14 28.4 15 28.7 16 28.7 22.6 28.7 28 23.3 28 16.7 28 8.4 22.6 3 16 3z" fill="#fff" opacity=".0"/><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.1 1.6 5.9L4 29l8.3-2.2c1.7.9 3.7 1.4 5.7 1.4 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 .9-3.6-.2-.4c-1-1.6-1.5-3.4-1.5-5.2C6 10 10.5 5.5 16 5.5S26 10 26 15.5 21.5 24.8 16 24.8zm5.4-6.9c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.2-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-1.7-.9-2.8-1.6-4-3.5-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.2 3.4 5.3 4.7 2 .8 2.7.9 3.7.8.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.6-.3z" fill="#fff"/></svg>
+            WhatsApp
+        </a>
     </header>
 
-    <!-- Banner principal com imagem de fundo -->
-    <div class="whatsapp-container" id="inicio">
-        <div class="hero-content">
-            <span class="hero-badge">✓ Orçamento grátis • Atendimento no mesmo dia</span>
-            <h2 class="hero-title">Seu ar-condicionado gelando de novo, rápido e sem dor de cabeça</h2>
-            <p class="hero-sub">Instalação, manutenção e limpeza em Salvador e toda a região metropolitana.</p>
-            <a href="https://api.whatsapp.com/send?phone=5571981965938&text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento."
-               target="_blank" rel="noopener" class="whatsapp-button">
-                <img src="components/images/icons8-whatsapp.svg.svg" alt="" class="whatsapp-icon">
-                Solicitar Orçamento
-            </a>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+        <div class="hero-overlay"></div>
+        <div class="hero-inner">
+            <span class="hero-badge">❄️ Orçamento grátis • Atendimento no mesmo dia</span>
+            <h1 class="hero-title">Seu ar-condicionado <span>gelando de novo</span>, rápido e sem dor de cabeça</h1>
+            <p class="hero-sub">Instalação, manutenção, limpeza e conserto em Salvador e toda a região metropolitana. Fale agora e receba seu orçamento em minutos pelo WhatsApp.</p>
+
+            <div class="hero-cta">
+                <a href="https://api.whatsapp.com/send?phone=5571981965938&text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento."
+                   target="_blank" rel="noopener" class="btn btn-wa btn-lg" data-cta="hero">
+                    <svg class="wa-svg" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.1 1.6 5.9L4 29l8.3-2.2c1.7.9 3.7 1.4 5.7 1.4 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 .9-3.6-.2-.4c-1-1.6-1.5-3.4-1.5-5.2C6 10 10.5 5.5 16 5.5S26 10 26 15.5 21.5 24.8 16 24.8zm5.4-6.9c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.2-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-1.7-.9-2.8-1.6-4-3.5-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.2 3.4 5.3 4.7 2 .8 2.7.9 3.7.8.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.6-.3z" fill="#fff"/></svg>
+                    Solicitar orçamento grátis
+                </a>
+                <a href="tel:+5571981965938" class="btn btn-ghost btn-lg" data-cta="hero-call">📞 (71) 98196-5938</a>
+            </div>
+
+            <ul class="hero-chips">
+                <li>✓ Orçamento sem compromisso</li>
+                <li>✓ Atendimento no mesmo dia</li>
+                <li>✓ Profissionais qualificados</li>
+                <li>✓ Salvador e região</li>
+            </ul>
         </div>
-    </div>
+    </section>
+
+    <!-- BARRA DE CONFIANÇA -->
+    <section class="trustbar" aria-label="Nossos diferenciais">
+        <div class="trustbar-inner">
+            <div class="trust"><span>💸</span><p><strong>Orçamento grátis</strong><br>sem compromisso</p></div>
+            <div class="trust"><span>⚡</span><p><strong>Mesmo dia</strong><br>agilidade no atendimento</p></div>
+            <div class="trust"><span>👷</span><p><strong>Equipe qualificada</strong><br>serviço bem feito</p></div>
+            <div class="trust"><span>📍</span><p><strong>Salvador e região</strong><br>e região metropolitana</p></div>
+        </div>
+    </section>
 
     <main>
-        <!-- Seção de Serviços -->
-        <section id="servicos">
-            <h2>Nossos Serviços</h2>
-            <div class="servicos-grid">
-                <div class="servico">
-                    <div class="servico-icon">❄️</div>
-                    <h3>Instalação de Ar-Condicionado</h3>
-                    <p>Instalação de diversos modelos (split, inverter e outros) com segurança e eficiência.</p>
+        <!-- SERVIÇOS -->
+        <section id="servicos" class="section">
+            <div class="section-head">
+                <span class="eyebrow">O que fazemos</span>
+                <h2>Nossos serviços</h2>
+                <p class="section-sub">Cuidamos do seu ar-condicionado do começo ao fim — instalação, manutenção, limpeza e reparos.</p>
+            </div>
+            <div class="cards">
+                <article class="card">
+                    <div class="card-icon">❄️</div>
+                    <h3>Instalação</h3>
+                    <p>Instalação de diversos modelos (split, inverter e outros) com segurança e acabamento caprichado.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon">🛠️</div>
+                    <h3>Manutenção preventiva</h3>
+                    <p>Revisão periódica que evita panes, reduz o consumo de energia e prolonga a vida do aparelho.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon">💧</div>
+                    <h3>Limpeza e higienização</h3>
+                    <p>Ar mais puro e saudável em casa e no trabalho, com limpeza profunda e profissional.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon">⚙️</div>
+                    <h3>Conserto e reparos</h3>
+                    <p>Diagnóstico preciso e solução de falhas para o seu equipamento voltar a gelar como novo.</p>
+                </article>
+            </div>
+            <div class="section-cta">
+                <a href="https://api.whatsapp.com/send?phone=5571981965938&text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento."
+                   target="_blank" rel="noopener" class="btn btn-wa" data-cta="servicos">Pedir orçamento no WhatsApp</a>
+            </div>
+        </section>
+
+        <!-- COMO FUNCIONA -->
+        <section id="como-funciona" class="section section-alt">
+            <div class="section-head">
+                <span class="eyebrow">Simples e rápido</span>
+                <h2>Como funciona</h2>
+                <p class="section-sub">Do primeiro contato ao ar gelando, em 3 passos.</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-num">1</div>
+                    <h3>Você chama no WhatsApp</h3>
+                    <p>Conta o que precisa e, se puder, manda uma foto do aparelho. Rápido e sem burocracia.</p>
                 </div>
-                <div class="servico">
-                    <div class="servico-icon">🛠️</div>
-                    <h3>Manutenção Preventiva</h3>
-                    <p>Evite problemas futuros com manutenção periódica que garante o bom funcionamento do aparelho.</p>
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <h3>Recebe o orçamento grátis</h3>
+                    <p>Passamos o valor e o horário disponível, sem compromisso e sem surpresas.</p>
                 </div>
-                <div class="servico">
-                    <div class="servico-icon">💧</div>
-                    <h3>Limpeza e Higienização</h3>
-                    <p>Melhore a qualidade do ar e aumente a vida útil do seu ar-condicionado com limpeza profissional.</p>
-                </div>
-                <div class="servico">
-                    <div class="servico-icon">⚙️</div>
-                    <h3>Conserto e Reparos</h3>
-                    <p>Diagnóstico e solução de falhas para o seu equipamento voltar a funcionar perfeitamente.</p>
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <h3>O técnico resolve</h3>
+                    <p>Nossa equipe vai até você — sempre que possível no mesmo dia — e deixa tudo funcionando.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Seção de Diferenciais / Por que escolher -->
-        <section id="diferenciais" class="diferenciais">
-            <h2>Por que escolher a Polartech?</h2>
-            <div class="diferenciais-grid">
-                <div class="diferencial">
-                    <span class="diferencial-num">✓</span>
-                    <h3>Orçamento grátis</h3>
-                    <p>Você recebe o valor antes de fechar, sem compromisso e sem surpresas.</p>
-                </div>
-                <div class="diferencial">
-                    <span class="diferencial-num">⚡</span>
-                    <h3>Atendimento no mesmo dia</h3>
-                    <p>Agilidade para você não ficar no calor esperando dias por um técnico.</p>
-                </div>
-                <div class="diferencial">
-                    <span class="diferencial-num">👷</span>
-                    <h3>Profissionais qualificados</h3>
-                    <p>Equipe técnica experiente e atenciosa, do começo ao fim do serviço.</p>
-                </div>
-                <div class="diferencial">
-                    <span class="diferencial-num">📍</span>
-                    <h3>Salvador e região</h3>
-                    <p>Atendemos Salvador, Lauro de Freitas e toda a região metropolitana.</p>
-                </div>
+        <!-- SOBRE + FOTO -->
+        <section id="sobre" class="section split">
+            <div class="split-media">
+                <img src="components/images/manutencao-de-ar-condicionado-2.png"
+                     alt="Técnico da Polartech fazendo manutenção em ar-condicionado split" loading="lazy">
+            </div>
+            <div class="split-text">
+                <span class="eyebrow">Quem somos</span>
+                <h2>Especialistas em ar-condicionado em Salvador</h2>
+                <p>Somos uma empresa especializada em ar-condicionado, atuando em Salvador e toda a região metropolitana. Nosso compromisso é garantir o melhor desempenho do seu equipamento, com conforto, eficiência e um atendimento próximo e atencioso.</p>
+                <ul class="check-list">
+                    <li>Profissionais experientes e educados</li>
+                    <li>Serviço limpo e organizado</li>
+                    <li>Preço justo e transparente</li>
+                </ul>
+                <a href="https://api.whatsapp.com/send?phone=5571981965938&text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento."
+                   target="_blank" rel="noopener" class="btn btn-wa" data-cta="sobre">Falar com um especialista</a>
             </div>
         </section>
 
-        <!-- DEPOIMENTOS: quando a Juliana enviar mensagens REAIS de clientes,
-             pedir para o assistente reativar esta seção aqui. Nada de inventar. -->
-
-        <!-- Seção de Contato -->
-        <section id="contato">
-            <h2>Entre em Contato</h2>
-            <p class="contato-intro">Fale com a gente agora pelo WhatsApp e receba seu orçamento sem compromisso.</p>
-            <div class="contatos-grid">
-                <div class="contato-item">
-                    <img src="components/images/icons8-whatsapp.svg.svg" alt="" class="contato-icon">
-                    <h3>WhatsApp</h3>
-                    <p><a href="https://api.whatsapp.com/send?phone=5571981965938&text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento."
-                          target="_blank" rel="noopener">(71) 98196-5938</a></p>
-                </div>
-                <div class="contato-item">
-                    <div class="contato-icon-emoji">📍</div>
-                    <h3>Área de atendimento</h3>
-                    <p>Salvador, Lauro de Freitas e região metropolitana.</p>
-                </div>
-                <!--
-                Tem Instagram, e-mail, telefone fixo ou horário de funcionamento?
-                Me passe que eu adiciono aqui um bloco para cada um.
-                -->
+        <!-- FAQ -->
+        <section id="duvidas" class="section section-alt">
+            <div class="section-head">
+                <span class="eyebrow">Perguntas frequentes</span>
+                <h2>Dúvidas comuns</h2>
+            </div>
+            <div class="faq">
+                <details>
+                    <summary>O orçamento é realmente grátis?</summary>
+                    <p>Sim. Você recebe o valor antes de fechar qualquer coisa, sem compromisso e sem custo.</p>
+                </details>
+                <details>
+                    <summary>Vocês atendem no mesmo dia?</summary>
+                    <p>Sempre que a agenda permite, sim. Chame no WhatsApp e a gente confirma o horário disponível na hora.</p>
+                </details>
+                <details>
+                    <summary>Quais regiões vocês atendem?</summary>
+                    <p>Salvador, Lauro de Freitas e toda a região metropolitana.</p>
+                </details>
+                <details>
+                    <summary>Trabalham com quais serviços e modelos?</summary>
+                    <p>Instalação, manutenção, limpeza e conserto — de diversos modelos, incluindo split e inverter.</p>
+                </details>
             </div>
         </section>
 
-        <!-- Seção Sobre Nós -->
-        <section id="sobre">
-            <h2>Sobre Nós</h2>
-            <p>Somos uma empresa especializada em ar-condicionado, atuando em Salvador e toda a região metropolitana,
-                com serviços de instalação, manutenção e limpeza. Nosso compromisso é garantir o melhor desempenho
-                do seu equipamento, proporcionando conforto e eficiência, com profissionais extremamente
-                qualificados e atenciosos.</p>
+        <!-- CTA FINAL -->
+        <section class="final-cta">
+            <h2>Pronto para o seu ambiente gelar de novo?</h2>
+            <p>Fale agora com a Polartech e receba seu orçamento grátis pelo WhatsApp.</p>
+            <a href="https://api.whatsapp.com/send?phone=5571981965938&text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento."
+               target="_blank" rel="noopener" class="btn btn-wa btn-lg" data-cta="final">
+                <svg class="wa-svg" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.1 1.6 5.9L4 29l8.3-2.2c1.7.9 3.7 1.4 5.7 1.4 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 .9-3.6-.2-.4c-1-1.6-1.5-3.4-1.5-5.2C6 10 10.5 5.5 16 5.5S26 10 26 15.5 21.5 24.8 16 24.8zm5.4-6.9c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.2-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-1.7-.9-2.8-1.6-4-3.5-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.2 3.4 5.3 4.7 2 .8 2.7.9 3.7.8.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.6-.3z" fill="#fff"/></svg>
+                Chamar no WhatsApp
+            </a>
         </section>
     </main>
 
-    <!-- Rodapé -->
-    <footer class="rodape">
-        <div class="rodape-conteudo">
-            <img src="components/images/logo-PT.svg" alt="Polartech" class="rodape-logo">
-            <p class="rodape-nome">Polartech — Ar-condicionado</p>
-            <p class="rodape-area">Salvador • Lauro de Freitas • Região Metropolitana</p>
-            <p class="rodape-copy">© <span id="ano"></span> Polartech. Todos os direitos reservados.</p>
+    <!-- RODAPÉ -->
+    <footer class="site-footer">
+        <div class="footer-brand">
+            <img src="components/images/logo-mark.svg" alt="" class="brand-mark">
+            <span class="brand-name">Polar<span>tech</span></span>
         </div>
+        <p class="footer-area">Ar-condicionado • Salvador, Lauro de Freitas e Região Metropolitana</p>
+        <p class="footer-contact"><a href="https://api.whatsapp.com/send?phone=5571981965938" target="_blank" rel="noopener">WhatsApp (71) 98196-5938</a></p>
+        <p class="footer-copy">© <span id="ano"></span> Polartech. Todos os direitos reservados.</p>
     </footer>
 
-    <!-- Botão flutuante do WhatsApp -->
+    <!-- Barra fixa de WhatsApp (celular) -->
     <a href="https://api.whatsapp.com/send?phone=5571981965938&text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento."
-       target="_blank" rel="noopener"
-       class="whatsapp-float" aria-label="Fale conosco no WhatsApp">
-        <img src="components/images/icons8-whatsapp.svg.svg" alt="">
+       target="_blank" rel="noopener" class="mobile-cta" data-cta="sticky">
+        <svg class="wa-svg" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.1 1.6 5.9L4 29l8.3-2.2c1.7.9 3.7 1.4 5.7 1.4 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 .9-3.6-.2-.4c-1-1.6-1.5-3.4-1.5-5.2C6 10 10.5 5.5 16 5.5S26 10 26 15.5 21.5 24.8 16 24.8zm5.4-6.9c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.2-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-1.7-.9-2.8-1.6-4-3.5-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.2 3.4 5.3 4.7 2 .8 2.7.9 3.7.8.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.6-.3z" fill="#fff"/></svg>
+        Chamar no WhatsApp agora
+    </a>
+
+    <!-- Botão flutuante de WhatsApp (desktop) -->
+    <a href="https://api.whatsapp.com/send?phone=5571981965938&text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento."
+       target="_blank" rel="noopener" class="whatsapp-float" aria-label="Fale conosco no WhatsApp" data-cta="float">
+        <svg class="wa-svg" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.1 1.6 5.9L4 29l8.3-2.2c1.7.9 3.7 1.4 5.7 1.4 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 .9-3.6-.2-.4c-1-1.6-1.5-3.4-1.5-5.2C6 10 10.5 5.5 16 5.5S26 10 26 15.5 21.5 24.8 16 24.8zm5.4-6.9c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.2-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-1.7-.9-2.8-1.6-4-3.5-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.2 3.4 5.3 4.7 2 .8 2.7.9 3.7.8.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.6-.3z" fill="#fff"/></svg>
     </a>
 
     <script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
