@@ -63,6 +63,11 @@ a { color: inherit; }
 .wa-svg { width: 22px; height: 22px; flex-shrink: 0; }
 .btn-lg .wa-svg { width: 24px; height: 24px; }
 
+/* ---------- Ícones próprios ---------- */
+.ico    { width: 30px; height: 30px; color: var(--cyan); flex-shrink: 0; }
+.ico-sm { width: 20px; height: 20px; flex-shrink: 0; }
+.ico-xs { width: 17px; height: 17px; color: var(--cyan); flex-shrink: 0; }
+
 /* ---------- Cabeçalho ---------- */
 .site-header {
     position: sticky;
@@ -110,7 +115,9 @@ a { color: inherit; }
 }
 .hero-inner { position: relative; max-width: 720px; width: 100%; margin: 0 auto 0 max(0px, calc((100vw - var(--max)) / 2)); }
 .hero-badge {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     background: rgba(53, 188, 255, 0.15);
     color: var(--cyan-soft);
     border: 1px solid rgba(53,188,255,.4);
@@ -120,6 +127,7 @@ a { color: inherit; }
     border-radius: 999px;
     margin-bottom: 22px;
 }
+.hero-badge .ico-sm { color: var(--cyan-soft); }
 .hero-title {
     color: #fff;
     font-size: clamp(30px, 5vw, 52px);
@@ -143,7 +151,15 @@ a { color: inherit; }
     gap: 10px 22px;
     margin-top: 30px;
 }
-.hero-chips li { color: #cfe0f5; font-size: 15px; font-weight: 600; }
+.hero-chips li { display: inline-flex; align-items: center; gap: 7px; color: #cfe0f5; font-size: 15px; font-weight: 600; }
+
+/* ---------- Flocos decorativos ---------- */
+.deco-snow { position: absolute; color: var(--cyan); opacity: .10; pointer-events: none; z-index: 0; }
+.deco-snow-1 { width: 200px; height: 200px; top: -30px; right: 6%; }
+.deco-snow-2 { width: 120px; height: 120px; bottom: 8%; right: 22%; opacity: .07; }
+.deco-snow-3 { width: 160px; height: 160px; top: 10%; left: 6%; opacity: .12; }
+.deco-snow-4 { width: 100px; height: 100px; bottom: 12%; right: 10%; opacity: .12; }
+.hero-inner { z-index: 1; }
 
 /* ---------- Barra de confiança ---------- */
 .trustbar { background: var(--navy-2); }
@@ -156,7 +172,7 @@ a { color: inherit; }
     padding: 22px clamp(16px, 4vw, 40px);
 }
 .trust { display: flex; align-items: center; gap: 12px; color: #eaf2ff; }
-.trust span { font-size: 30px; line-height: 1; }
+.trust .ico { color: var(--cyan-soft); }
 .trust p { font-size: 14px; line-height: 1.35; }
 .trust strong { color: #fff; font-size: 15px; }
 
@@ -211,15 +227,16 @@ a { color: inherit; }
     box-shadow: var(--shadow-sm);
     position: relative;
 }
+.step-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
 .step-num {
     width: 46px; height: 46px;
     display: flex; align-items: center; justify-content: center;
     font-weight: 800; font-size: 20px; color: #fff;
     background: linear-gradient(135deg, var(--cyan), var(--navy-2));
     border-radius: 12px;
-    margin-bottom: 16px;
     box-shadow: 0 6px 16px rgba(10, 28, 110, .3);
 }
+.step-ico { width: 34px; height: 34px; color: var(--cyan); opacity: .55; }
 .step h3 { color: var(--navy); font-size: 19px; margin-bottom: 8px; }
 .step p { color: var(--muted); font-size: 15px; }
 
