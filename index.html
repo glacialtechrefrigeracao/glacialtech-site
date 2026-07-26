@@ -9,6 +9,16 @@
     })(window,document,'script','dataLayer','GTM-MVWZPBQ5');</script>
     <!-- End Google Tag Manager -->
 
+    <!-- Google tag (gtag.js) - Google Ads: AW-11433129182 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11433129182"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-11433129182');
+    </script>
+    <!-- End Google tag -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -316,5 +326,14 @@
     </a>
 
     <script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
+    <!-- Google Ads: dispara conversao no clique de qualquer botao de WhatsApp -->
+    <script>
+      document.addEventListener('click', function (e) {
+        var link = e.target.closest('a[href*="api.whatsapp.com"], a[href*="wa.me"]');
+        if (link && typeof gtag === 'function') {
+          gtag('event', 'conversion', {'send_to': 'AW-11433129182/8_W6CJ7MytYcEN7p3ssq'});
+        }
+      }, true);
+    </script>
 </body>
 </html>
