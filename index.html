@@ -21,6 +21,8 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Impede o iOS de transformar números em link de ligação (regra: só WhatsApp) -->
+    <meta name="format-detection" content="telephone=no">
 
     <!-- SEO -->
     <title>Polartech — Ar-condicionado em Salvador | Instalação, Manutenção e Limpeza</title>
@@ -39,14 +41,15 @@
     <meta property="og:title" content="Polartech — Ar-condicionado em Salvador e região">
     <meta property="og:description" content="Instalação, manutenção, limpeza e conserto de ar-condicionado. Orçamento grátis e atendimento no mesmo dia.">
     <meta property="og:url" content="https://glacialtechrefrigeracao.github.io/glacialtech-site/">
-    <meta property="og:image" content="https://glacialtechrefrigeracao.github.io/glacialtech-site/components/images/manutencao-de-ar-condicionado-2.png">
+    <meta property="og:image" content="https://glacialtechrefrigeracao.github.io/glacialtech-site/components/images/og-image.jpg">
     <meta property="og:locale" content="pt_BR">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Polartech — Ar-condicionado em Salvador e região">
     <meta name="twitter:description" content="Instalação, manutenção, limpeza e conserto de ar-condicionado. Orçamento grátis e atendimento no mesmo dia.">
-    <meta name="twitter:image" content="https://glacialtechrefrigeracao.github.io/glacialtech-site/components/images/manutencao-de-ar-condicionado-2.png">
+    <meta name="twitter:image" content="https://glacialtechrefrigeracao.github.io/glacialtech-site/components/images/og-image.jpg">
 
-    <link href="styles/style.css?v=7" rel="stylesheet">
+    <link rel="preload" as="image" href="components/images/equipe-manutencao.webp" fetchpriority="high">
+    <link href="styles/style.css?v=8" rel="stylesheet">
 
     <!-- Dados estruturados: negócio local -->
     <script type="application/ld+json">
@@ -56,11 +59,32 @@
       "name": "Polartech",
       "description": "Instalação, manutenção, limpeza e conserto de ar-condicionado em Salvador e região metropolitana.",
       "url": "https://glacialtechrefrigeracao.github.io/glacialtech-site/",
+      "image": "https://glacialtechrefrigeracao.github.io/glacialtech-site/components/images/og-image.jpg",
       "telephone": "+55-71-98196-5938",
       "areaServed": ["Salvador", "Lauro de Freitas", "Região Metropolitana de Salvador"],
       "address": { "@type": "PostalAddress", "addressLocality": "Salvador", "addressRegion": "BA", "addressCountry": "BR" },
       "priceRange": "$$",
       "sameAs": []
+    }
+    </script>
+
+    <!-- Dados estruturados: FAQ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "O orçamento é realmente grátis?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sim. Você recebe o valor antes de fechar qualquer coisa, sem compromisso e sem custo." } },
+        { "@type": "Question", "name": "Vocês atendem no mesmo dia?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sempre que a agenda permite, sim. Chame no WhatsApp e a gente confirma o horário disponível na hora." } },
+        { "@type": "Question", "name": "Quais regiões vocês atendem?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Salvador, Lauro de Freitas e toda a região metropolitana." } },
+        { "@type": "Question", "name": "Trabalham com quais serviços e modelos?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Instalação, manutenção, limpeza e conserto — de diversos modelos, incluindo split e inverter." } },
+        { "@type": "Question", "name": "Vocês vendem aparelho de ar-condicionado?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Não — somos especializados em serviço: instalação, manutenção, limpeza e conserto. Se você já tem o aparelho (ou vai comprar), a gente instala e cuida dele pra você." } }
+      ]
     }
     </script>
 </head>
@@ -156,7 +180,7 @@
             <ul class="hero-chips">
                 <li><svg class="ico-xs"><use href="#ic-check"/></svg> Orçamento sem compromisso</li>
                 <li><svg class="ico-xs"><use href="#ic-check"/></svg> Atendimento no mesmo dia</li>
-                <li><svg class="ico-xs"><use href="#ic-check"/></svg> Profissionais qualificados</li>
+                <li><svg class="ico-xs"><use href="#ic-check"/></svg> 12 anos de experiência</li>
                 <li><svg class="ico-xs"><use href="#ic-check"/></svg> Salvador e região</li>
             </ul>
         </div>
@@ -168,7 +192,7 @@
             <div class="trust"><svg class="ico"><use href="#ic-tag"/></svg><p><strong>Orçamento grátis</strong><br>sem compromisso</p></div>
             <div class="trust"><svg class="ico"><use href="#ic-bolt"/></svg><p><strong>Mesmo dia</strong><br>agilidade no atendimento</p></div>
             <div class="trust"><svg class="ico"><use href="#ic-helmet"/></svg><p><strong>Equipe qualificada</strong><br>serviço bem feito</p></div>
-            <div class="trust"><svg class="ico"><use href="#ic-pin"/></svg><p><strong>Salvador e região</strong><br>e região metropolitana</p></div>
+            <div class="trust"><svg class="ico"><use href="#ic-pin"/></svg><p><strong>Salvador e região</strong><br>toda a região metropolitana</p></div>
         </div>
     </section>
 
@@ -237,15 +261,15 @@
         <!-- SOBRE + FOTO -->
         <section id="sobre" class="section split">
             <div class="split-media">
-                <img src="components/images/manutencao-de-ar-condicionado-2.png"
+                <img src="components/images/equipe-manutencao.webp" width="1080" height="675"
                      alt="Técnico da Polartech fazendo manutenção em ar-condicionado split" loading="lazy">
             </div>
             <div class="split-text">
                 <span class="eyebrow">Quem somos</span>
                 <h2>Especialistas em ar-condicionado em Salvador</h2>
-                <p>Com mais de 10 anos de experiência, somos uma empresa especializada em ar-condicionado, atuando em Salvador e toda a região metropolitana. Nosso compromisso é garantir o melhor desempenho do seu equipamento, com conforto, eficiência e um atendimento próximo e atencioso.</p>
+                <p>Há 12 anos a mesma equipe cuida de ar-condicionado em Salvador e toda a região metropolitana. Nosso compromisso é garantir o melhor desempenho do seu equipamento, com conforto, eficiência e um atendimento próximo e atencioso.</p>
                 <div class="stats">
-                    <div class="stat"><span class="stat-num">+10</span><span class="stat-label">anos de experiência</span></div>
+                    <div class="stat"><span class="stat-num">12</span><span class="stat-label">anos de experiência</span></div>
                     <div class="stat"><span class="stat-num">+1.500</span><span class="stat-label">clientes atendidos</span></div>
                 </div>
                 <ul class="check-list">
@@ -280,6 +304,10 @@
                 <details>
                     <summary>Trabalham com quais serviços e modelos?</summary>
                     <p>Instalação, manutenção, limpeza e conserto — de diversos modelos, incluindo split e inverter.</p>
+                </details>
+                <details>
+                    <summary>Vocês vendem aparelho de ar-condicionado?</summary>
+                    <p>Não — somos especializados em <strong>serviço</strong>: instalação, manutenção, limpeza e conserto. Se você já tem o aparelho (ou vai comprar), a gente instala e cuida dele pra você.</p>
                 </details>
             </div>
         </section>

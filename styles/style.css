@@ -103,7 +103,7 @@ a { color: inherit; }
     display: flex;
     align-items: center;
     padding: 70px clamp(16px, 4vw, 40px);
-    background: url("../components/images/manutencao-de-ar-condicionado-2.png") center/cover no-repeat;
+    background: url("../components/images/equipe-manutencao.webp") center/cover no-repeat;
     overflow: hidden;
 }
 .hero-overlay {
